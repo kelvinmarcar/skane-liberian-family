@@ -1,0 +1,232 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #e6f0ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+    padding: 10px 50px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.address, .contact {
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #003366, #0056b3);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background: #ff0000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background: #cc0000;
+    color: white;
+}
+
+.donate-btn {
+    background: #ff4444 !important;
+    color: white !important;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.donate-btn:hover {
+    background: #cc0000 !important;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #003366, #0056b3);
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+/* Event Slider */
+#events {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ff0000, #990000);
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+.event-slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.event-card {
+    min-width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.event-card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.event-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003366;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.event-card.fade {
+    opacity: 1;
+}
+
+/* Leadership Section Styling */
+.leadership-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #003366;
+}
+
+.leaders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.leader {
+    width: 22%;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.leader:hover {
+    transform: scale(1.05);
+}
+
+.leader img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #003366;
+    padding: 5px;
+}
+
+.leader-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.leader-position {
+    font-size: 1em;
+    font-weight: normal;
+    color: #555;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+    position: relative;
+    text-align: center;
+}
